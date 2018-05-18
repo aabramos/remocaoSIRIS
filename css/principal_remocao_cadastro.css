@@ -1,0 +1,338 @@
+/* 
+    Document   : principal_remocao_cadastro
+    Created on : 19/04/2012, 17:25:29
+    Author     : willian, adriano
+    Description:
+*/
+
+#div_body{
+    vertical-align: text-top;
+}
+
+#div_titulo{
+    height: 15px;
+    margin: 10px 10px 10px 10px;
+    padding-top: 20px;
+    position: relative;
+    /* estilo */
+    background-color: #FFFFFF;
+    font-family: Tahoma, Arial, sans-serif;
+    /* estilo */
+}
+
+#div_dados{
+    margin: 5px 0 5px 0;
+}
+
+#div_anexo{
+    padding: 7px;
+}
+
+#p_titulo{
+    font-weight: bolder;
+    font-size: 125%;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
+#div_formulario{
+    padding-top: 20px;
+    margin: 10px;
+    width: 600px;
+    display: inline-block;
+}
+
+form {
+    font-size: 95%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+form fieldset #lbl_sexof, #lbl_sexom, #lbl_cargoa, #lbl_cargod{
+    display: block;
+    float: right;
+}
+
+fieldset {
+    clear: both;
+    font-size: 100%;
+    border-color: #236A24;
+    border-width: 1px 0 0 0;
+    border-style: solid none none none;
+    padding: 10px;
+    margin: 0 0 0 0;
+}
+
+fieldset legend {
+    font-size: 120%;
+    font-weight: normal;
+    color: #2E892A;
+    margin: 0 0 0 0;
+    padding: 0 5px;
+}
+
+form fieldset .div_campo{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: transparent;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset label{
+    cursor: pointer;
+}
+
+form fieldset .div_campo_over{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: #C0FFC0;
+    border-radius: 5px;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset .div_campo_selected{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: #C0FFC0;
+    border-radius: 5px;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset .div_campo_erro{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: #FBD2D2;
+    border-radius: 5px;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset .img_datepicker{
+    display: block;
+    position: relative;
+    float: right;
+    margin: 5px 5px 5px 0;
+}
+
+form fieldset .div_campo label, .div_campo_over label, 
+.div_campo_selected label, .div_campo_erro label{
+    display: block;
+    float: left;
+    left: 0;
+    padding: 5px;
+}
+
+form fieldset .lbl_requirido{
+    font-weight: bold;
+}
+
+form fieldset .lbl_destino, .lbl_origem, .lbl_cargo, .lbl_vaga, .lbl_desc{
+    font-weight: bold;
+    padding: 5px;
+}
+
+form fieldset .lbl_dados{
+    padding: 2px;
+}
+
+form fieldset #lbl_sexof, #lbl_sexom{
+    display: block;
+    float: right;
+}
+
+form fieldset .div_campo_anexo input{
+    display: block;
+    float: left;
+    width: 550px;
+    height: 100px;
+    margin: 5px;
+}
+
+form fieldset .div_campo input, .div_campo_over input, 
+.div_campo_selected input, .div_campo_erro input,
+form fieldset .div_campo select, .div_campo_over select, 
+.div_campo_selected select, .div_campo_erro select{
+    display: block;
+    float: right;
+    right: 0;
+    margin: 5px;
+}
+
+.img_erro{
+    margin-top: 3px;
+}
+
+#img_progress, #img_area{
+    display: none;
+    position: relative;
+    float: right;
+    margin: 5px 5px 5px 0;
+}
+
+form #div_citacao{
+    position: relative;
+    float: left;
+    clear: both;
+    padding: 5px;
+    width: 100%;
+    font: normal 9pt/20px Tahoma, sans-serif;
+    background-color: #d8e8ff;
+    border: 1px #000 groove;
+    color: #202020;
+}
+
+form #div_enviar{
+    position: relative;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+}
+
+#div_notas{
+    display: inline-block;
+    float: left;
+    position: absolute;
+    margin: 0 10px 10px 10px;
+    width: 280px;
+    padding: 10px;
+    vertical-align: top;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 10pt;
+    height: 680px;
+    border: solid 1px #000;
+}
+
+#div_nota{
+    font: inherit;
+}
+
+.label_erro {
+    cursor: pointer;
+    color: blue;
+}
+
+@media print {
+    /* Ocultar campos desnecessários ao imprimir */
+    #menu_wrap{display: none;}
+    #div_nota{display: none;}
+    #div_notas{display: none;}
+    #div_header{display: none;}
+    #div_extracao{display: none;}
+    #div_versao{display: none;}
+    #div_sessao{right: 95px;}
+    #div_titulo{padding-left: 110px;}
+    #div_formulario{margin-left: 200px;}
+    #div_sessao{right: 106px; bottom: -10px;}
+    #div_body{display: inline-block;}
+}
+
+body{
+    background: #ededed;
+    margin:0;
+    padding:0;
+}
+
+#menu_wrap{
+    position:relative;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0; 
+    padding-right:0px;
+    width:100%;
+    height:40px;
+    list-style-type:none;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    box-shadow:0 1px 3px rgba(0,0,0,.2)
+}
+
+.button a{
+    cursor:pointer;
+    text-align:center;
+    font:13px/100% Tahoma, Geneva, sans-serif;
+    font-weight:bold;
+    position:relative;
+    min-width:50px;
+    height:20px;
+    float:left;
+    padding:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration:none;
+    text-shadow:0 1px 1px rgba(0,0,0,.3)
+}
+
+.button:first-child a{
+    -webkit-border-top-left-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-topleft-radius:0px;
+    -moz-border-bottomleft-radius:0px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0px
+}
+
+.l_Green,.l_Green .button a{
+    color: #ffffef;
+    background: #cce197;
+    border-right: 1px solid #7ead6b;
+    background: -moz-linear-gradient(top, #cce197 0%, #7ead6b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cce197), color-stop(100%,#7ead6b));
+    background: -webkit-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    background: -o-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    background: -ms-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#cce197', endColorstr='#7ead6b',GradientType=0 );
+    background: linear-gradient(top, #cce197 0%,#7ead6b 100%);
+}
+
+.l_Green .button a:hover,.l_Green .button a:focus{
+    background: rgb(204,225,151);
+    background: -moz-linear-gradient(top, rgba(204,225,151,1) 0%, rgba(194,215,141,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,225,151,1)), color-stop(100%,rgba(194,215,141,1)));
+    background: -webkit-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    background: -o-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    background: -ms-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#cce197', endColorstr='#c2d78d',GradientType=0 );
+    background: linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+}
+
+.l_Green .button a:active{
+    background: rgb(194,215,141);
+    background: -moz-linear-gradient(top, rgba(194,215,141,1) 0%, rgba(204,225,151,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(194,215,141,1)), color-stop(100%,rgba(204,225,151,1)));
+    background: -webkit-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    background: -o-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    background: -ms-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#c2d78d', endColorstr='#cce197',GradientType=0 );
+    background: linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+}
+
+.button:last-child a{
+    float:left;
+    border-right: 1px solid #7ead6b;
+    -webkit-border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius:0px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px
+}

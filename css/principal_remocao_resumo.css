@@ -1,0 +1,241 @@
+/* 
+    Document   : principal_remocao_resumo
+    Created on : 28/05/2012, 14:59:00
+    Author     : willian, Adriano
+    Description:
+*/
+
+#div_titulo{
+    height: 80px;
+    margin: 10px 5px 5px 5px;
+    padding-top: 5px;
+    position: relative;
+    /* estilo */
+    background-color: #FFFFFF;
+    font-family: Tahoma, Arial, sans-serif;
+    /* estilo */
+}
+
+#div_resumo{
+    position: relative;
+    left: 50%;
+    margin-left: -370px;
+    margin-bottom: 30px;
+    width: 700px;
+    padding: 20px;
+    border: 2px solid #AAAAAA;
+    background-color: #FFFFFF;
+}
+
+#p_titulo{
+    font-weight: bolder;
+    font-size: 125%;
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+#p_numero{
+    font-weight: bolder;
+    font-size: 125%;
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 20px;
+}
+
+fieldset {
+    clear: both;
+    font-size: 100%;
+    border-color: #236A24;
+    border-width: 1px 0 0 0;
+    border-style: solid none none none;
+    padding: 10px;
+    margin: 0 0 0 0;
+}
+
+fieldset legend {
+    font-size: 120%;
+    font-weight: normal;
+    color: #2E892A;
+    margin: 0 0 0 0;
+    padding: 0 5px;
+}
+
+fieldset table{
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+th{
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+td{
+    font: inherit;
+    padding-top: 5px;
+}
+
+.div_campo{
+    padding-bottom: 5px;
+    font-weight: bold;
+    float: left;
+    clear: left;
+}
+
+.div_anexo{
+    float: left;
+    clear: left;
+}
+
+.div_emissao{
+    font-size: 72%;
+    float: left;
+    clear: left;
+    padding-top: 3px;
+}
+
+.div_valor{
+    float: right;
+    clear: right;
+}
+
+#div_menu{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -370px;
+    margin-bottom: 5px;
+    width: 710px;
+    padding: 15px;
+    border: 2px solid #AAAAAA;
+    background-color: #FFFFFF;
+}
+
+#div_anexos_adicionais{
+    display: none;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -370px;
+    margin-bottom: 10px;
+    width: 700px;
+    padding: 20px 10px 110px 30px;
+    border: 2px solid #AAAAAA;
+    background-color: #FFFFFF;
+}
+
+@media print {
+    /* Ocultar campos desnecessários ao imprimir */
+    #menu_wrap{display: none;}
+    #div_header{display: none;}
+    #div_menu{display: none;}
+    #div_extracao{display: none;}
+    #div_versao{display: none;}
+    #div_titulo{padding-left: 110px;}
+    #div_sessao{right: 95px;}
+    #div_resumo{padding: 15px 30px 10px 30px; margin-left: -370px;}
+    #div_anexos_adicionais{display: block;}
+    #div_body{display: inline-block;}
+}
+
+body{
+    background: #ededed;
+    margin:0;
+    padding:0;
+}
+
+#menu_wrap{
+    position:relative;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0; 
+    padding-right:0px;
+    width:100%;
+    height:40px;
+    list-style-type:none;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    box-shadow:0 1px 3px rgba(0,0,0,.2)
+}
+
+.button a{
+    cursor:pointer;
+    text-align:center;
+    font:13px/100% Tahoma, Geneva, sans-serif;
+    font-weight:bold;
+    position:relative;
+    min-width:50px;
+    height:20px;
+    float:left;
+    padding:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration:none;
+    text-shadow:0 1px 1px rgba(0,0,0,.3)
+}
+
+.button:first-child a{
+    -webkit-border-top-left-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-topleft-radius:0px;
+    -moz-border-bottomleft-radius:0px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0px
+}
+
+.l_Green,.l_Green .button a{
+    color: #ffffef;
+    background: #cce197;
+    border-right: 1px solid #7ead6b;
+    background: -moz-linear-gradient(top, #cce197 0%, #7ead6b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cce197), color-stop(100%,#7ead6b));
+    background: -webkit-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    background: -o-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    background: -ms-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#cce197', endColorstr='#7ead6b',GradientType=0 );
+    background: linear-gradient(top, #cce197 0%,#7ead6b 100%);
+}
+
+.l_Green .button a:hover,.l_Green .button a:focus{
+    background: rgb(204,225,151);
+    background: -moz-linear-gradient(top, rgba(204,225,151,1) 0%, rgba(194,215,141,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,225,151,1)), color-stop(100%,rgba(194,215,141,1)));
+    background: -webkit-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    background: -o-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    background: -ms-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#cce197', endColorstr='#c2d78d',GradientType=0 );
+    background: linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+}
+
+.l_Green .button a:active{
+    background: rgb(194,215,141);
+    background: -moz-linear-gradient(top, rgba(194,215,141,1) 0%, rgba(204,225,151,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(194,215,141,1)), color-stop(100%,rgba(204,225,151,1)));
+    background: -webkit-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    background: -o-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    background: -ms-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#c2d78d', endColorstr='#cce197',GradientType=0 );
+    background: linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+}
+
+.button:last-child a{
+    float:right;
+    border-right: 1px solid #7ead6b;
+    -webkit-border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius:0px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px
+}

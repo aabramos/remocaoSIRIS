@@ -1,0 +1,139 @@
+/* 
+    Document   : principal
+    Created on : 09/04/2012, 17:35:27
+    Author     : willian, adriano
+    Description: Folha de Estilo com CSS Reset.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Aparências em comum nas páginas */
+body{
+    background: #dfdfdf;
+    background-image: url("../resources/bg-1.png"), url("../resources/bg-2.png");
+    background-repeat: repeat-x, repeat;
+    font: normal normal medium Tahoma, sans-serif;
+}
+
+#div_pagina{
+    /* posicionamento */
+    position: absolute;
+    left: 50%;
+    margin-left: -490px;
+    /* posicionamento */
+    
+    /* estilo */
+    background-color: #FFFFFF;
+    /* estilo */
+}
+
+#div_header{
+    /* posicionamento */
+    position: relative;
+    height: 150px;
+    width: 980px;
+    display: block;
+    /* posicionamento */
+
+    /* estilo */
+    background-image: url("../resources/header_pub_rem.png");
+    /* estilo */
+}
+
+#div_body{
+    /* posicionamento */
+    position: relative;
+    width: 950px;
+    margin: 10px;
+    padding: 5px;
+    /* posicionamento */
+    
+    /* estilo */
+    background-color: #FFFFFF;
+    font-family: Tahoma, sans-serif;
+    /* estilo */
+}
+
+#div_versao{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 75%;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    color: #236A24;
+}
+
+#div_extracao{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 75%;
+    position: relative;
+    text-align: center; 
+    top: 40px;
+    color: black;
+}
+
+#div_sessao{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 70%;
+    position: absolute;
+    right: 4px;
+    top: -20px;
+    color: darkgray;
+}
+
+#div_footer{
+    /* posicionamento */
+    position: relative;
+    bottom: 0;
+    height: 90px;
+    width: 980px;
+    /* posicionamento */
+    
+    /* estilo */
+    background-image: url("../resources/footer_pub_rem.png");
+    /* estilo */
+}
+/* Aparências em comum em todas as páginas */

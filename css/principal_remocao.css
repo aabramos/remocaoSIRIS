@@ -1,0 +1,204 @@
+/* 
+    Document   : principal_remocao
+    Created on : 19/04/2012, 17:25:43
+    Author     : willian
+    Description: 
+*/
+
+#div_body{
+    vertical-align: text-top;
+}
+
+#p_titulo{
+    font-weight: bolder;
+    font-size: 100%;
+    text-align: left;
+    padding: 0 0 0 25px;
+    color: #236A24;
+}
+
+#div_formulario{
+    margin: 10px;
+    width: 600px;
+    display: inline-block;
+}
+
+form {
+    font-size: 95%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+fieldset {
+    clear: both;
+    font-size: 100%;
+    border-color: #236A24;
+    border-width: 1px 0 0 0;
+    border-style: solid none none none;
+    padding: 10px;
+    margin: 0 0 0 0;
+}
+
+fieldset legend {
+    font-size: 120%;
+    font-weight: normal;
+    color: #2E892A;
+    margin: 0 0 0 0;
+    padding: 0 5px;
+}
+
+form fieldset .div_campo{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: transparent;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset label{
+    cursor: pointer;
+}
+
+form fieldset .div_campo_over{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: #C0FFC0;
+    border-radius: 5px;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset .div_campo_selected{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: #C0FFC0;
+    border-radius: 5px;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset .div_campo_erro{
+    clear: both;
+    padding: 2px;
+    width: 100%;
+    height: 29px;
+    background-color: #FBD2D2;
+    border-radius: 5px;
+    /* teste */
+    margin-bottom: 2px;
+}
+
+form fieldset .img_datepicker{
+    display: block;
+    position: relative;
+    float: right;
+    margin: 5px 5px 5px 0;
+}
+
+form fieldset .div_campo label, .div_campo_over label, 
+.div_campo_selected label, .div_campo_erro label{
+    display: block;
+    float: left;
+    left: 0;
+    padding: 5px;
+}
+
+form fieldset .lbl_requerido{
+    font-weight: bold;
+}
+
+form fieldset #lbl_necess_sim, #lbl_necess_nao{
+    display: block;
+    float: right;
+}
+
+form fieldset .div_campo input, .div_campo_over input, 
+.div_campo_selected input, .div_campo_erro input,
+form fieldset .div_campo select, .div_campo_over select, 
+.div_campo_selected select, .div_campo_erro select{
+    display: block;
+    float: right;
+    right: 0;
+    margin: 5px;
+}
+
+.img_erro{
+    margin-top: 3px;
+}
+
+#div_captcha{
+    margin-top: 10px;
+    height: auto;
+}
+
+#div_captcha #recaptcha_area, #div_captcha_erro #recaptcha_area{
+    position: relative;
+    left: 50%;
+    margin-left: -159px;
+}
+
+#div_captcha_erro{
+    background-color: #FBD2D2;
+}
+
+form #div_enviar{
+    position: relative;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+}
+
+#div_novo{
+    height: 75%;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 8pt;
+}
+
+#div_notas{
+    display: inline-block;
+    float: left;
+    position: absolute;
+    margin: 0 10px 10px 10px;
+    width: 280px;
+    height: 72%;
+    padding: 10px;
+    vertical-align: top;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+#div_notas legend{
+    font-weight: bolder;
+}
+
+.div_nota{
+    border: 1px dotted #000000;
+    padding: 2px;
+    margin-bottom: 2px;
+    width: 100%; 
+    background-color: #FBD2D2;
+    font: inherit;
+}
+
+.label_erro {
+    cursor: pointer;
+    color: blue;
+}
+
+@media print {
+    /* Ocultar campos desnecessários ao imprimir */
+    #div_header{display: none;}
+    #div_formulario{margin-left: 170px;}
+    #div_body{display: inline-block;}
+}
